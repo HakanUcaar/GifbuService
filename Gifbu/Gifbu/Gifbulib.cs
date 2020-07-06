@@ -3,15 +3,9 @@ using Dakota.Receiver.SerialPort;
 using Gifbu.Machines;
 using Gifbu.Models;
 using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
 using System.IO;
 using System.IO.Ports;
-using System.Linq;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Gifbu
 {

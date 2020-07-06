@@ -1,9 +1,5 @@
 ﻿using Dakota.Machine;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Gifbu.Machines.Movements;
 
 namespace Gifbu.Machines

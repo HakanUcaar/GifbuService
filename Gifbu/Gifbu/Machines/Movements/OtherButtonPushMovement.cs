@@ -1,11 +1,5 @@
 ﻿using Dakota.Machine;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Gifbu.Machines.Movements
 {
@@ -16,9 +10,9 @@ namespace Gifbu.Machines.Movements
             OnReceiveData += ReceiveData; 
         }
 
-        public async void ReceiveData(IMachine Sender, object Data)
+        public void ReceiveData(IMachine Sender, object Data)
         {
-            Console.WriteLine(Sender.Name + " Okunan Veri : ButonAPushed");
+            Console.WriteLine(Sender.Name + String.Format(" Okunan Veri : {0}",Data.ToString()));
             Gifbulib.WebSocketClient.SendData(Data.ToString());            
         }
     }
